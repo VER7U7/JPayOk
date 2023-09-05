@@ -7,7 +7,7 @@
                 payok = new PayOk(API_KEY, API_ID, SECERET_KEY, SHOP_ID); // Инициализация
                 double balance = payok.getBalance(); // Получить баланс
                 ArrayList<Transaction> transactions = payok.getTransaction(paymentID, offset); // Получение транзакций
-        catch(PayOkException ex) {
+        } catch(PayOkException ex) {
                 System.out.println(ex.getMessage());
         }
         
